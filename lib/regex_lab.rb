@@ -17,7 +17,7 @@ end
 def valid_phone_number?(phone)
   result = phone.all? do |number|
     a = number.match(/^\(\d{3}\)\d{3}[- ]?\d{4}$/) ? true : false
-    b = number.match(/^\d{3}[ -]?\d{3}[ -]\d{4}$/) ? true : false
+    b = number.match(/^\d{3}[ -]?\d{3}[ -]?\d{4}$/) ? true : false
 
     a || b ? true : false
   end
